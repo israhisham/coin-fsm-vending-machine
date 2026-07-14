@@ -10,5 +10,9 @@ Inserting 0.50 JD moves the state forward by two steps (capped at E).
 Reaching state E triggers dispense_product().
 Inserting a coin while in state E starts a new purchase (acts like a reset to B or C).
 
+<img width="1920" height="1080" alt="A0" src="https://github.com/user-attachments/assets/ab0878d6-1f32-4521-8449-2f86d74afbfa" />
+
 Requirements:
 None, this project uses only the Python standard library.
+
+
