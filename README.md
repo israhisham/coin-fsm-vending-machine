@@ -5,13 +5,6 @@ The machine has 5 states, each representing the total amount inserted so far:
 
 Each coin insertion transitions the machine from one state to the next based on the coin value:
 
-        +0.25         +0.25         +0.25         +0.25
-   A ----------> B ----------> C ----------> D ----------> E
-   |                                                        |
-   +--------------------------+0.50 (from A, B, C, or D)----+
-
-E → dispenses product, then resets to B or C on the next coin.
-
 Inserting 0.25 JD moves the state forward by one step (A→B→C→D→E).
 Inserting 0.50 JD moves the state forward by two steps (capped at E).
 Reaching state E triggers dispense_product().
